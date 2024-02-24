@@ -25,7 +25,7 @@ $(btn_xhr).click(() => {
             // JSON.parse the joke
             let parsedJoke = JSON.parse(joke);
             // set the output
-            $('#jokeOutput').text(parsedJoke.joke);
+            $('#output').text(parsedJoke.joke);
         }
            
     }        

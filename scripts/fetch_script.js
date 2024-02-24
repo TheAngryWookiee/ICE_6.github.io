@@ -8,7 +8,7 @@ let url_fetch = "https://icanhazdadjoke.com";
 //need a header Accept value set to 'application/json'
 let myFetchHeader = { "Accept": "application/json" };
 
-let jokeOutput = $('#jokeOutput');
+
 // create the callback for the click
 $(btn_fetch).click(() => {
     // use fetch
@@ -24,7 +24,7 @@ $(btn_fetch).click(() => {
         // console log the json
         console.log(jsonRes);
         // set the output
-        jokeOutput.text(jsonRes.joke);
+        $('#output').text(jsonRes.joke);
     })                               
 })
     
